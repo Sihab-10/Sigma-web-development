@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 4</title>
+    <style>
+        :root{
+            --color:rgb(165, 248, 57);
+            --bgpricolor:rgb(82, 192, 82);
+            --bgseccolor:rgb(11, 58, 11);
+            --bdcolor:rgb(255, 255, 0);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            display: flex;
+            flex-direction:row-reverse;
+            margin-right: 90px;
+        }
+        ul{
+            
+            border: 2px solid var(--bgseccolor);
+            background-color: var(--bgpricolor);
+        }
+        ul li{
+            list-style: none;
+            border: 2px solid var(--bdcolor);
+            background-color: var(--bgseccolor);
+            margin: 20px;
+            margin-right: 30px;
+            padding: 20px;
+        }
+        .country{
+            border: 2px solid var(--bgseccolor);
+            display: inline-block;
+            margin: 12px;
+            padding: 10px;
+        }
+        ul li a{
+            color: var(--color);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <div>
+                <span class="country">
+                    <svg height="50" width="50">
+                        <circle cx="25" cy="25" r="20" stroke="black" stroke-width="3" fill="red" />
+                      </svg>
+                </span>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Main Goal</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Home</a></li>
+            </div>
+        </ul>
+    </nav>
+</body>
+</html>

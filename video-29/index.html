@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 3 | Design the Card</title>
+    <Style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+        * {
+            
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .card {
+            width: 306px;
+            height: 602px;
+            margin: auto;
+            border: 2px solid gray;
+            border-radius: 38px;
+            box-shadow: 13px 12px 5px #f0dcdc;
+        }
+
+        .picture img {
+            width: 290px;
+            margin: -44px;
+            height: 200px;
+            padding: 52px;
+            border-radius: 85px;
+        }
+
+        .capsul {
+            margin-left: 10px;
+
+        }
+
+        .capsul-1 {
+            border: 2px solid #e0bfbf;
+            border-radius: 18px;
+            padding: 4px;
+        }
+
+        .capsul-2 {
+            border: 2px solid #e0bfbf;
+            border-radius: 18px;
+            padding: 4px;
+            margin-left: 8px;
+        }
+
+        .header {
+            margin: 10px;
+        }
+
+        .content {
+            margin: 10px;
+            text-align: justify;
+        }
+
+        .more {
+            display: inline-block;
+            margin-top: 30px;
+            margin-left: 85px;
+            padding: 10px 26px;
+            border: 0 solid gray;
+            border-radius: 45px;
+            background-color: #dae1eb;
+            color: #1c6dc9;
+        }
+    </Style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="picture">
+            <img src="https://images.unsplash.com/photo-1575936123452-b67c3203c357?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="This is an image">
+        </div>
+        <div class="capsul">
+            <span class="capsul-1">Forest</span>
+            <span class="capsul-2">Photography</span>
+        </div>
+        <div class="header">
+            <h2>What is Photography ?</h2>
+        </div>
+        <div class="content">
+            <p>
+                Photography is the art, application, and practice of creating images by recording light, either
+                electronically by means of an image sensor, or chemically by means of a light-sensitive material such as
+                photographic film.
+            </p>
+        </div>
+
+        <button class="more">Read More</button>
+    </div>
+</body>
+
+</html>
