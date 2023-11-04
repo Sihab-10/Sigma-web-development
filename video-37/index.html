@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise - 5 Solution</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+      </style>
+    <style>
+        :root {
+            --primary-bg-color: blueviolet;
+            --secondary-bg-color: rgb(225, 193, 255);
+            --text-color: rgb(255, 255, 255);
+            --box1-color: rgb(60, 95, 60);
+            --box2-color: rgb(42, 48, 122);
+            --border-color: darkblue;
+            --footer-bg-color: rgb(128, 82, 255);
+            --circle-color: #1738a5;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+        header {
+            position: sticky;
+            top: 0;
+        }
+        nav {
+
+            background-color: var(--primary-bg-color);
+            padding: 23px 0px;
+            top: 0px;
+            position: sticky;
+        }
+        ul li {
+            list-style: none;
+            display: inline;
+            padding: 23px;
+        }
+        ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 18px;
+        }
+        main {
+            display: flex;
+            background-color: var(--secondary-bg-color);
+            height: 800px;
+        }
+        .box-1 {
+            width: 400px;
+            height: 400px;
+            background-color: var(--box1-color);
+            margin: 234px;
+        }
+        .box-2 {
+            width: 400px;
+            height: 400px;
+            background-color: var(--box2-color);
+            margin: 234px;
+        }
+        article {
+            border: 2px solid var(--border-color);
+            background-color: var(--secondary-bg-color);
+            font-family: 'Dancing Script', cursive;
+            color: rgb(2, 11, 97);
+            border-radius: 80px;
+            height: 250px;
+            text-align: center;
+            padding-top: 192px;
+            margin: 100px;
+            font-size: 56px;
+        }
+        .fixy{
+           position: fixed;
+           bottom: 20px;
+        }
+        footer{
+            text-align: center;
+            background-color: var(--footer-bg-color);
+            color: var(--text-color);
+            padding: 10px ;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="box-1"></section>
+        <section class="box-2"></section>
+    </main>
+        <section class="fixy">
+            <svg height="100" width="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="var(--circle-color)" />
+              </svg>
+        </section> 
+    <article>
+        <p>Welcome to this Sigma Web Development Express</p> 
+    </article>
+    
+    <footer>
+        CopyRight | All right Reserved 2023
+    </footer>
+</body>
+</html>
